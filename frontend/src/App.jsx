@@ -25,21 +25,22 @@ function App() {
   };
 
   return (
-    <div className="card">
+    <div className="app-container">
       <h1>Draw a Digit</h1>
-      <ReactSketchCanvas 
-        ref={canvasRef} 
-        strokeWidth={15} 
-        strokeColor="black" 
-        width="280px" 
-        height="280px" 
-        style={{border: "2px solid #333"}}
-      />
-      <div style={{marginTop: "20px"}}>
-        <button onClick={() => canvasRef.current.clearCanvas()}>Clear</button>
-        <button onClick={handleSubmit}>Predict</button>
+      <div className="canvas-wrapper">
+        <ReactSketchCanvas 
+          ref={canvasRef} 
+          strokeWidth={15} 
+          strokeColor="#00ffcc" 
+          width="280px" 
+          height="280px" 
+        />
       </div>
-      {prediction !== null && <h2>Result: {prediction}</h2>}
+      <div className="controls">
+        <button className="btn clear" onClick={() => canvasRef.current.clearCanvas()}>Clear</button>
+        <button className="btn predict" onClick={handleSubmit}>Predict</button>
+      </div>
+      {prediction !== null && <div className="result">Result: {prediction}</div>}
     </div>
   );
 }
