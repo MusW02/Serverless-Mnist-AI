@@ -1,0 +1,10 @@
+# Python (Backend) garbage
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# Node (Frontend) garbage
+node_modules/
+dist/
+.DS_Store
