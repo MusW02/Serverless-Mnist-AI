@@ -5,3 +5,4 @@ python-multipart
 numpy<2.0.0
 onnxruntime
 Pillow
+# Trigger CI/CD
