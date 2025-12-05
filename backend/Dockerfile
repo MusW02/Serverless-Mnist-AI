@@ -12,3 +12,4 @@ COPY mnist-8.onnx ${LAMBDA_TASK_ROOT}
 # 4. CRITICAL CHANGE: Set the CMD to your Mangum handler
 # "app" is the filename (app.py), "handler" is the variable inside it
 CMD [ "app.handler" ]
+
