@@ -13,3 +13,4 @@ COPY mnist-8.onnx ${LAMBDA_TASK_ROOT}
 # "app" is the filename (app.py), "handler" is the variable inside it
 CMD [ "app.handler" ]
 
+
