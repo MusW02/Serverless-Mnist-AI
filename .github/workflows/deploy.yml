@@ -39,7 +39,7 @@ jobs:
         # We use --provenance=false to fix the Lambda error
         # We use --platform=linux/amd64 to ensure it works on AWS servers
         docker build --provenance=false --platform=linux/amd64 -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG 
 
     # 4. Update Lambda
     - name: Update Lambda Function
