@@ -6,6 +6,12 @@
 ![FastAPI](https://img.shields.io/badge/fastapi-109989?style=for-the-badge&logo=FASTAPI&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
+<br />
+
+![Project Screenshot](screenshot.png)
+
+<br />
+
 A full-stack AI application deployed using a modern **Serverless DevOps architecture**. This project demonstrates how to bridge the gap between Data Science and DevOps by containerizing a Computer Vision model and deploying it via a completely automated CI/CD pipeline.
 
 **[🔴 Live Demo Link](http://mnist-frontend-devops.s3-website.eu-north-1.amazonaws.com/)**
